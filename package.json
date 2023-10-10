@@ -1,8 +1,14 @@
 {
   "name": "future-options-bs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Calculate options prices, greeks and volatilities",
-  "keywords": ["black-scholes", "options", "CALL", "PUT", "implied volatility" ],
+  "keywords": [
+    "black-scholes",
+    "options",
+    "CALL",
+    "PUT",
+    "implied volatility"
+  ],
   "main": "main.js",
   "type": "module",
   "scripts": {

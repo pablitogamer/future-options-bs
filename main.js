@@ -20,7 +20,7 @@ import { normalDist, normalCdf } from "./math/statFunctions.js";
  */
 export function callPrice(fut ,sp ,vol ,t ,r = 0, decimal = 2){
     let call = (Math.exp(-r*t) * (fut * normalCdf(D1(fut,sp,vol,t)) - sp * normalCdf(D2(fut,sp,vol,t))));
-    return Math.round(call * 10 * decimal) / (10 * decimal);
+    return call.toFixed(decimal);
 }
   
 
@@ -36,7 +36,7 @@ export function callPrice(fut ,sp ,vol ,t ,r = 0, decimal = 2){
  */
 export function putPrice(fut, sp, vol, t, r = 0, decimal = 2){
   let put = Math.exp(-r*t) * (sp * normalCdf(-D2(fut,sp,vol,t)) - fut * normalCdf(-D1(fut,sp,vol,t)));
-  return Math.round(put * 10 * decimal) / (10 * decimal);
+  return put.toFixed(decimal);
 }
 
 /**
