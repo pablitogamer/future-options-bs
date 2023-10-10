@@ -1,0 +1,13 @@
+{
+  "name": "future-options-bs",
+  "version": "1.0.0",
+  "description": "Calculate options prices, greeks and volatilities",
+  "keywords": ["black-scholes", "options", "CALL", "PUT", "implied volatility" ],
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pablo Praderio",
+  "license": "ISC"
+}
